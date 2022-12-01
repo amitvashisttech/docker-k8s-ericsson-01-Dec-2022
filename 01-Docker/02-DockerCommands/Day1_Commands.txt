@@ -1,0 +1,47 @@
+ 1035  docker images 
+ 1036  docker ps 
+ 1037  docker run busybox echo "Welcome to the world of Docker" 
+ 1038  docker run -it ubuntu:16.04 
+ 1039  docker ps 
+ 1040  docker ps -a 
+ 1041  docker start 03e07d661abf
+ 1042  docker ps 
+ 1043  docker attach 03e07d661abf
+ 1044  docker ps 
+ 1045  docker run -it ubuntu:16.04 
+ 1046  docker ps 
+ 1047  docker logs ee72196ededb
+ 1048  docker events ee72196ededb
+ 1049  docker events 
+ 1050  curl 172.17.0.4
+ 1051  docker ps 
+ 1052  curl 172.17.0.4:8080
+ 1053  curl 172.17.0.4:80
+ 1054  docker ps 
+ 1055  docker run -d --name test-apache-1 testapache:v6
+ 1056  docker ps 
+ 1057  docker rename feb0a0cb5a31 my-test-av 
+ 1058  docker ps 
+ 1059  ls
+ 1060  docker images 
+ 1061  docker run -d amitvashist7/k8s-tiny-web 
+ 1062  docker ps 
+ 1063  docker inspect 097112c04295
+ 1064  curl 172.17.0.14
+ 1065  docker ps 
+ 1066  docker inspect 097112c04295
+ 1067  ls
+ 1068  cd docker-k8s-ericsson-01-Dec-2022/
+ 1069  ls
+ 1070  cd 01-Docker/
+ 1071  ls
+ 1072  cd 01-Docker-Installation/
+ 1073  ls
+ 1074  cd ..
+ 1075  ls
+ 1076  cd ..
+ 1077  ls
+ 1078  git pull 
+ 1079  mkdir 01-Docker/02-DockerCommands
+ 1080  history 
+ 1081  history >> 01-Docker/02-DockerCommands/Day1_Commands.txt 
