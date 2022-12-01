@@ -45,3 +45,240 @@
  1079  mkdir 01-Docker/02-DockerCommands
  1080  history 
  1081  history >> 01-Docker/02-DockerCommands/Day1_Commands.txt 
+
+er images
+ 1036  docker ps
+ 1037  docker run busybox echo "Welcome to the world of Docker"
+ 1038  docker run -it ubuntu:16.04
+ 1039  docker ps
+ 1040  docker ps -a
+ 1041  docker start 03e07d661abf
+ 1042  docker ps
+ 1043  docker attach 03e07d661abf
+ 1044  docker ps
+ 1045  docker run -it ubuntu:16.04
+ 1046  docker ps
+ 1047  docker logs ee72196ededb
+ 1048  docker events ee72196ededb
+ 1049  docker events
+ 1050  curl 172.17.0.4
+ 1051  docker ps
+ 1052  curl 172.17.0.4:8080
+ 1053  curl 172.17.0.4:80
+ 1054  docker ps
+ 1055  docker run -d --name test-apache-1 testapache:v6
+ 1056  docker ps
+ 1057  docker rename feb0a0cb5a31 my-test-av
+ 1058  docker ps
+ 1059  ls
+ 1060  docker images
+ 1061  docker run -d amitvashist7/k8s-tiny-web
+ 1062  docker ps
+ 1063  docker inspect 097112c04295
+ 1064  curl 172.17.0.14
+ 1065  docker ps
+ 1066  docker inspect 097112c04295
+ 1067  ls
+ 1068  cd docker-k8s-ericsson-01-Dec-2022/
+ 1069  ls
+ 1070  cd 01-Docker/
+ 1071  ls
+ 1072  cd 01-Docker-Installation/
+ 1073  ls
+ 1074  cd ..
+ 1075  ls
+ 1076  cd ..
+ 1077  ls
+ 1078  git pull
+ 1079  mkdir 01-Docker/02-DockerCommands
+ 1080  history
+ 1081  history >> 01-Docker/02-DockerCommands/Day1_Commands.txt
+ 1082  git add . ; git commit -m "Docker Commands" ; git push
+ 1083  git pull
+ 1084  history
+ 1085  docker ps
+ 1086  docker ps -qa
+ 1087  docker kill $(docker ps -q)
+ 1088  docker ps
+ 1089  docker run -d amitvashist7/k8s-tiny-web
+ 1090  docker ps
+ 1091  docker stop 943db6c514fc
+ 1092  docker run -d amitvashist7/k8s-tiny-web
+ 1093  docker ps
+ 1094  docker ps -q
+ 1095  docker kill $(docker ps -q)
+ 1096  docker ps
+ 1097  docker ps -a
+ 1098  docker ps
+ 1099  docker start nw-test-3-mybr0
+ 1100  docker ps
+ 1101  docker ps -qa
+ 1102  docker rm  $(docker ps -qa)
+ 1103  docker ps
+ 1104  docker ps -a
+ 1105  docker kill $(docker ps -qa)
+ 1106  docker rm  $(docker ps -qa)
+ 1107  ld
+ 1108  ls
+ 1109  docker ps
+ 1110  docker run -d --name test-1 amitvashist7/k8s-tiny-web
+ 1111  docker ps
+ 1112  docker inspect test-1
+ 1113  curl 172.17.0.2
+ 1114  docker network ls
+ 1115  docker network rm mybr0
+ 1116  docker network ls
+ 1117  docker network inspect bridge
+ 1118  docker run -d --name test-2 amitvashist7/k8s-tiny-web
+ 1119  docker network inspect bridge
+ 1120  docker run -d --name test-3 amitvashist7/k8s-tiny-web
+ 1121  docker run -d --name test-4 amitvashist7/k8s-tiny-web
+ 1122  docker network inspect bridge
+ 1123  docker stop test-1 test-3
+ 1124  docker network inspect bridge
+ 1125  docker run -d --name test-5 amitvashist7/k8s-tiny-web
+ 1126  docker network inspect bridge
+ 1127  docker start test-1 test-3
+ 1128  docker network inspect bridge
+ 1129  ls
+ 1130  curl 172.17.0.2
+ 1131  ip addr
+ 1132  curl 172.17.0.2
+ 1133  docker ps
+ 1134  netstat -tulnp
+ 1135  systemctl stop haproxy
+ 1136  netstat -tulnp
+ 1137  docker run -d --name test-6 -p 8080:80 amitvashist7/k8s-tiny-web
+ 1138  docker ps
+ 1139  netstat -tulnp
+ 1140  systemctl status docker
+ 1141  docker ps
+ 1142  docker inspect test-6
+ 1143  history
+ 1144  docker run -d --name test-7 -P amitvashist7/k8s-tiny-web
+ 1145  docker ps
+ 1146  docker run -d --name test-8 -P amitvashist7/k8s-tiny-web
+ 1147  docker run -d --name test-9 -P amitvashist7/k8s-tiny-web
+ 1148  docker ps
+ 1149  docker run -d --name test-9 -P amitvashist7/k8s-tiny-web:2
+ 1150  docker run -d --name test-10 -P amitvashist7/k8s-tiny-web:2
+ 1151  docker run -d --name test-11 -P amitvashist7/k8s-tiny-web:3
+ 1152  docker run -d --name test-12 -P amitvashist7/k8s-tiny-web:4
+ 1153  docker ps
+ 1154  docker images
+ 1155  docker ps
+ 1156  docker kill $(docker ps -qa)
+ 1157  docker ps
+ 1158  docker images
+ 1159  docker run -d --name test-nw-1  amitvashist7/network-multitool
+ 1160  docker ps
+ 1161  docker run -d --name test-abc-1 ubuntu:16.04
+ 1162  docker ps
+ 1163  docker ps -a
+ 1164  docker run -it --name test-abc-2 ubuntu:16.04
+ 1165  docker ps
+ 1166  docker run -itd --name test-abc-3 ubuntu:16.04
+ 1167  docker ps
+ 1168  docker run -itd --name test-abc-3 ubuntu:16.04 top
+ 1169  docker run -itd --name test-abc-4 ubuntu:16.04 top
+ 1170  docker ps
+ 1171  docker kill $(docker ps -qa)
+ 1172  docker ps
+ 1173  docker run -d --name test-15 -P amitvashist7/k8s-tiny-web:4
+ 1174  docker ps
+ 1175  docker image inspect amitvashist7/k8s-tiny-web:4
+ 1176  docker images
+ 1177  docker image inspect amitvashist7/network-multitool
+ 1178  ls
+ 1179  docker ps
+ 1180  docker images
+ 1181  docker run -d -P --name test-1 amitvashist7/network-multitool
+ 1182  docker run -d -P --name test-new-1 amitvashist7/network-multitool
+ 1183  docker ps
+ 1184  docker inspect 144b8f4edf46
+ 1185  ls
+ 1186  docker ps
+ 1187  docker run -d --name test-bridge-1 amitvashist7/network-multitool
+ 1188  docker ps
+ 1189  docker kill 144b8f4edf46 515100bed4fc
+ 1190  docker ps
+ 1191  docker inspect test-bridge-1
+ 1192  docker ps
+ 1193  docker exec -it test-bridge-1 ifconfig
+ 1194  docker exec -it test-bridge-1 route -n
+ 1195  docker run -d --name test-bridge-2 amitvashist7/network-multitool
+ 1196  docker exec -it test-bridge-2 route -n
+ 1197  docker exec -it test-bridge-2 ifconfig
+ 1198  docker exec -it test-bridge-2 ping -c2 172.17.0.4
+ 1199  docker exec -it test-bridge-2 ping -c2 google.com
+ 1200  docker network  ls
+ 1201  docker network inspect bridge
+ 1202  docker network  ls
+ 1203  docker network ls
+ 1204  docker run -d --name test-host-nw --network host amitvashist7/network-multitool
+ 1205  docker ps
+ 1206  docker exec -it test-bridge-2 ifconfig
+ 1207  docker exec -it test-host-nw ifconfig
+ 1208  ifconfig
+ 1209  docker ps
+ 1210  docker images
+ 1211  docker run -d --name test-host-nw-1 --network host nginx
+ 1212  docker ps
+ 1213  docker ps =a
+ 1214  docker ps -a
+ 1215  docker logs d97a1252c60d
+ 1216  netstat -tulnp
+ 1217  netstat -tulnp | grep -i 80
+ 1218  docker ps
+ 1219  systemctl status nginx
+ 1220  kill -9 28639
+ 1221  netstat -tulnp | grep -i 80
+ 1222  docker run -d --name test-host-nw-2 --network host nginx
+ 1223  docker ps
+ 1224  netstat -tulnp
+ 1225  docker run -d --name test-host-nw-3 --network host nginx
+ 1226  docker ps
+ 1227  docker images
+ 1228  docker run -d --name test-host-nw-3 --network host amitvashist7/k8s-tiny-web
+ 1229  docker run -d --name test-host-nw-5 --network host amitvashist7/k8s-tiny-web
+ 1230  docker ps
+ 1231  docker run -d --name test-host-nw-6 --network host amitvashist7/k8s-tiny-web
+ 1232  docker ps
+ 1233  docker ps -a
+ 1234  docker logs b65a5d33cdf2
+ 1235  docker images
+ 1236  docker run -d --name test-host-nw-7 --network host amitvashist7/backend-app
+ 1237  docker ps
+ 1238  docker inspect 9e1d0081f826
+ 1239  ls
+ 1240  docker image inspect amitvashist7/backend-app
+ 1241  netstat
+ 1242  netstat -tulnp | grep -i 5001
+ 1243  docker ps
+ 1244  docker exec -it 9e1d0081f826 ls
+ 1245  docker exec -it 9e1d0081f826 cat app.py
+ 1246  docker run -d --name test-bridge-nw-8 -P   amitvashist7/backend-app
+ 1247  docker ps
+ 1248  docker run -d --name test-none-nw --network none amitvashist7/network-multitool
+ 1249  docker exec -it test-bridge-2 ifconfig
+ 1250  docker exec -it test-none-nw ifconfig
+```
+
+
+```
+1263  docker network
+ 1264  docker network ls
+ 1265  docker network create --help
+ 1266  docker network create -d bridge --subnet=172.28.0.0/16  --ip-range=172.28.5.0/24 --gateway=172.28.5.254 mybr0
+ 1267  docker network ls
+ 1268  docker network inspect mybr0
+ 1269  docker run -d --name test-mybr0-nw --network mybr0 amitvashist7/network-multitool
+ 1270  docker exec -it test-mybr0-nw ifconfig
+ 1271  docker network inspect mybr0
+ 1272  docker run -d --name test-mybr0-nw-2 --network mybr0 amitvashist7/network-multitool
+ 1273  docker run -d --name test-mybr0-nw-3 --network mybr0 amitvashist7/network-multitool
+ 1274  docker network inspect mybr0
+ 1275  docker exec -it test-mybr0-nw-2 ifconfig
+ 1276  docker exec -it test-mybr0-nw-2 rount -n
+ 1277  docker exec -it test-mybr0-nw-2 route -n
+```
