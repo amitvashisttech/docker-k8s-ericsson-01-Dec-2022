@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: helloworld-controller
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     app: docker-get-started
   template:
